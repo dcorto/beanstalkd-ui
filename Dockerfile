@@ -18,7 +18,7 @@ RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Install beanstalk_console from source
-RUN composer create-project ptrofimov/beanstalk_console -s dev .
+RUN composer create-project ptrofimov/beanstalk_console --prefer-dist -s dev .
 
 # Set document root permissions
 RUN chown -R www-data:www-data /var/www/html
