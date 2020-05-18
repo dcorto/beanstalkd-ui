@@ -3,7 +3,7 @@ FROM php:7.4-apache
 # Install Generic Dependencies
 RUN apt-get update
 RUN apt-get install -y zip unzip libzip-dev libxml2-dev \
-    && docker-php-ext-configure zip --with-libzip \
+    && docker-php-ext-configure zip \
     && docker-php-ext-install zip
 
 # Enable Apache Modules
