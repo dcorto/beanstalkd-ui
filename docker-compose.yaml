@@ -1,0 +1,15 @@
+---
+version: '3.4'
+
+services:
+  beanstalkd-ui:
+    build: .
+    ports:
+      - 80:80
+    environment:
+      - BEANSTALKD_HOST=beanstalkd
+      - BEANSTALKD_PORT=11300
+    links:
+      - beanstalkd
+  beanstalkd:
+    image: 1maa/beanstalkd
