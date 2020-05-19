@@ -34,9 +34,9 @@ To configure webapp with a custom beanstalk server to load at runtime, set the `
 
 ```
 docker run -d -p 80:80 \					 
-					 -e 'BEANSTALKD_HOST=beanstalkd' \
-					 -e 'BEANSTALKD_PORT=11300' \
-					 beanstalk-ui
+	-e 'BEANSTALKD_HOST=beanstalkd' \
+	-e 'BEANSTALKD_PORT=11300' \
+	beanstalk-ui
 ```
 
 ## Docker Compose
