@@ -41,7 +41,7 @@ docker run -d -p 80:80 \
 
 ## Docker Compose
 
-There is a [docker-compose.yaml](docker-compose.yaml) as example for build and run beanstalkd-ui an beanstalkd server with docker-compose.
+There is a [docker-compose.yaml](https://github.com/dcorto/beanstalkd-ui/blob/master/docker-compose.yaml) as example for build and run beanstalkd-ui an beanstalkd server with docker-compose.
 
 ```
 docker-compose up

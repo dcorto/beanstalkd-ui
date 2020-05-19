@@ -1,5 +1,13 @@
 FROM php:7.4-apache
 
+# Build-time metadata as defined at http://label-schema.org
+ARG BUILD_DATE
+ARG VCS_REF
+LABEL org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.vcs-url="https://github.com/dcorto/beanstalkd-ui" \
+      org.label-schema.schema-version="1.0"
+
 # Install Generic Dependencies
 RUN apt-get update
 RUN apt-get install -y zip unzip libzip-dev libxml2-dev \
