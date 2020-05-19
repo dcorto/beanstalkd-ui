@@ -22,3 +22,9 @@ RUN composer create-project ptrofimov/beanstalk_console --prefer-dist -s dev .
 
 # Set document root permissions
 RUN chown -R www-data:www-data /var/www/html
+
+# Add and set custom entrypoint
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
+
+CMD ["/docker-entrypoint.sh"]

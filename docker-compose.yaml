@@ -1,5 +1,5 @@
 ---
-version: '3.4'
+version: '3.5'
 
 services:
   beanstalkd-ui:
@@ -11,5 +11,6 @@ services:
       - BEANSTALKD_PORT=11300
     links:
       - beanstalkd
+
   beanstalkd:
     image: 1maa/beanstalkd
