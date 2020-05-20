@@ -2,9 +2,13 @@
 
 This is a Dockerized version for [Beanstalkd Console](https://github.com/ptrofimov/beanstalk_console) project.
 
+![](https://img.shields.io/github/license/dcorto/beanstalkd-ui)
+
 ## Public Docker Images
 
-Public Docker images are available here: https://hub.docker.com/r/thedavis/beanstalkd-ui  
+Public Docker images are available here: [thedavis/beanstalkd-ui](https://hub.docker.com/r/thedavis/beanstalkd-ui)
+
+[![docker pulls](https://img.shields.io/docker/pulls/thedavis/beanstalkd-ui)](https://hub.docker.com/r/thedavis/beanstalkd-ui) [![stars](https://img.shields.io/docker/stars/thedavis/beanstalkd-ui)](https://hub.docker.com/r/thedavis/beanstalkd-ui) [![size](https://img.shields.io/docker/image-size/thedavis/beanstalkd-ui/latest)](https://hub.docker.com/r/thedavis/beanstalkd-ui) [![layers](https://img.shields.io/microbadger/layers/thedavis/beanstalkd-ui)](https://microbadger.com/images/thedavis/beanstalkd-ui)
 
 ## Building
 

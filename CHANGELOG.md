@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 0.0.2 (not-released)
+## 0.0.2
 - Changes on README.md
 - Added org.label-schema labels on Dockerfile
 - Created hook for autobuild on DockerHub for set build ARGS
